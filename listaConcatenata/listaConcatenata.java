@@ -73,9 +73,54 @@ public class listaConcatenata<T>{
         }
         public void set(int n, Object info){
             nodoConc <T> blocco=testa;
+            if(altezza>0 && n<=size()){
             for(int i=0;i<n;i++){
                     blocco=blocco.next;
                 }
+            }
             blocco.info=info;
         }
+        @Override
+        public String toString(){
+            String testo="[ ";
+            nodoConc <T> temp=testa;
+            testo+="\""+temp.info+"\"  ";
+            for(int i=0;i<altezza-1;i++){
+                temp=temp.next;
+               testo+="\""+temp.info+"\"  "; 
+            }
+            testo+="]";
+            return testo;
+        }
+        public void add(int n,T ele){
+            nodoConc <T> nextBlock=testa;
+            nodoConc <T> lastBlock = null;
+            nodoConc <T> toAdd=new nodoConc(ele,null);
+            if(altezza>0 && n<=size()){
+                for(int i=0;i<n;i++){    
+                    if(i==(n-1)) {lastBlock=nextBlock;}
+                    nextBlock=nextBlock.next;
+                }
+               if(n==0) {testa=new nodoConc(ele,nextBlock);}else{
+                lastBlock.next=toAdd;
+                toAdd.next=nextBlock;   
+               } 
+               altezza++;
+        }
+        }
+        public void remove(int n){
+         nodoConc <T> nextBlock=testa;
+         nodoConc <T> lastBlock = null; 
+         if(altezza>0 && n<=size()){
+                for(int i=0;i<n+1;i++){    
+                    if(i==(n-1)){lastBlock=nextBlock;}
+                        nextBlock=nextBlock.next;
+                }
+                if(n==0){removeHead();}else{
+                lastBlock.next=nextBlock;
+                altezza--;
+                }
+        }
+        }
 }
+

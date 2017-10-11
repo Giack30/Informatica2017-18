@@ -11,6 +11,7 @@ public class ListeConcatenate{
 			prova[i]=i;
 		}
 		c= new listaConcatenata<Integer>(prova);
+                System.out.println(c.toString());
 		System.out.println(c.size());
                 System.out.println(c.get(0));
                 //c.removeTail();
@@ -18,9 +19,18 @@ public class ListeConcatenate{
                 c.addHead(10);
                 System.out.println(c.size());
                 System.out.println(c.get(0));
-                c.set(0, 145);
+                c.set(1, 145);
+                System.out.println(c.toString());
+                c.add(0, 33);
+                System.out.println(c.toString());
                 System.out.println(c.size());
-                System.out.println(c.get(0));
+                //c.add(0, 22);
+                //System.out.println(c.toString());
+                //System.out.println(c.size());
+                c.remove(9);
+                System.out.println(c.size());
+                System.out.println(c.toString());
+                
 	}
 	
 }
