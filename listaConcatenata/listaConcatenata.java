@@ -1,12 +1,17 @@
 package listeconcatenate;
+
+import java.util.Iterator;
+
 /**
  *
  * @author giacomo.ravagnan
+ * @param <T>
  */
 public class listaConcatenata<T>{
 	private nodoConc <T> testa;
 	private nodoConc <T> coda;
 	private int altezza=0;
+	private int iterPos=0;
 	
 	public listaConcatenata(){
 	testa=null; coda=null;	
@@ -122,5 +127,32 @@ public class listaConcatenata<T>{
                 }
         }
         }
+        public Iterator Iterator(){
+            return new Iterator(){
+                nodoConc <T> elem = testa;
+                int length=0;
+                @Override
+                public boolean hasNext() {
+                   return length+1<=altezza;
+                }
+
+                @Override
+                public Object next() {
+                    if(hasNext()){
+                        T temp = (T) elem.info;
+                        elem=elem.next;
+                        length++;
+                        return temp;
+                    }else{
+                        return null;
+                    }
+                    
+                }
+                
+            };
+            
+        }
+
+
 }
 
