@@ -18,6 +18,7 @@ public class Test {
             if(!info.equals(exit)) test.addTail(info);
         }
         System.out.println(test.toString());
+        System.out.println(test.Iterator().hasNext());
         
     }
 }
