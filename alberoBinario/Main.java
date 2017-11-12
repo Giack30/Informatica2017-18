@@ -1,3 +1,9 @@
+package albbin;
+
+import albbin.ABR;
+import albbin.AlberoBinarioRicerca;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,14 +18,33 @@ public class Main {
         v.visitaDifferita(a);
         System.out.println();
         v.visitaSimmetrica(a);
-        System.out.println("");
-        System.out.println("!!SECONDA PROVA!!");
+        
+        System.out.println("\n\n!!SECONDA PROVA!!\n");
         
         AlberoBinarioRicerca <Integer> alb1= new AlberoBinarioRicerca(3);
         for(int i=0;i<6;i++){
             alb1.add(i);
         }
-        v.visitaSimmetrica(alb1);
         
+        
+        System.out.println("\n\n!!TERZA PROVA!!\n");
+        
+        ABR abr=new ABR();
+        Random r=new Random();
+        Comparable[] arrayz=new Comparable[7];
+        for(int i=0;i<7;i++){
+            arrayz[i]=r.nextInt(100);
+            System.out.print(arrayz[i]+" , ");
+        }
+        arrayz=abr.bubbleSort(arrayz);
+        System.out.println("");
+        for(int i=0;i<7;i++){
+            System.out.print(arrayz[i]+" , ");
+        }
+        
+        System.out.println("\n\n!!QUARTA PROVA!!\n");
+                ABR albD=new ABR();
+		albD=abr.buildABR(arrayz, 0, arrayz.length, abr); 
+                abr.visitaSimmetrica(albD);
     }
 }

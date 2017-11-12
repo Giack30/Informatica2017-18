@@ -1,3 +1,6 @@
+package albbin;
+import albbin.AlberoBinarioRicerca;
+
 public class Visite {
 
     public static void visitaAnticipata(AlberoBinario b){
@@ -26,7 +29,7 @@ public class Visite {
         }
     }
 
-    void visitaSimmetrica(AlberoBinarioRicerca<Integer> b) {
+    public void visitaSimmetrica(AlberoBinarioRicerca<Integer> b) {
        if(b.getLeft()!=null){
             System.out.print(" [ ");
                    visitaSimmetrica(b.getLeft());

@@ -1,3 +1,5 @@
+package albbin;
+
 
 public class AlberoBinarioRicerca<T> {
 
