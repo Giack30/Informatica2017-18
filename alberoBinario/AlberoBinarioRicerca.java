@@ -60,7 +60,7 @@ public class AlberoBinarioRicerca<T> {
 
         } else {
             if(this.info.compareTo(info)==0){
-                System.out.println("numero già inserito nell'ABR");
+                System.out.println("elemento già inserito nell'ABR");
             }else{
             if (this.right == null) {
                 right = new AlberoBinarioRicerca(info);
