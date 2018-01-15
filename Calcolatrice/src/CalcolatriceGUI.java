@@ -9,7 +9,7 @@ import javax.swing.JButton;
 
 /**
  *
- * @author luca.daminato
+ * @author giacomo.ravagnan && edoardo.mileto
  */
 public class CalcolatriceGUI extends javax.swing.JFrame {
     public static int cellaUno=0, cellaDue=0;
