@@ -8,6 +8,6 @@ Inserite schede di laboratorio ed eventuali esercizi assegnati dal docente.
 
 <strong> Argomenti : </strong> 
 1) Strutture dati (Alberi binari, liste concatenate)
-2) GUI (java swing)
+2) GUI (java swing, AWT, javafx)
 
 
