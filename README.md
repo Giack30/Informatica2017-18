@@ -4,10 +4,11 @@
 
 Inserite schede di laboratorio ed eventuali esercizi assegnati dal docente.
 
-<strong> Linguaggio : </strong> Java e C++
+<strong> Linguaggi : </strong> Java, C++, LiveScript.
 
 <strong> Argomenti : </strong> 
-1) Strutture dati (Alberi binari, liste concatenate)
+1) Strutture dati (Alberi binari, liste concatenate, hashMap)
 2) GUI (java swing, AWT, javafx)
+3) pagine HTML e script
 
 
