@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>some city</city>
+        <firstName>Elisabetta</firstName>
+        <lastName>Manente</lastName>
+        <postalCode>1234</postalCode>
+        <street>some street</street>
+    </person>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>some city</city>
+        <firstName>Marco</firstName>
+        <lastName>Ravagnan</lastName>
+        <postalCode>1234</postalCode>
+        <street>some street</street>
+    </person>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>some city</city>
+        <firstName>Giacomo</firstName>
+        <lastName>Ravagnan</lastName>
+        <postalCode>1234</postalCode>
+        <street>some street</street>
+    </person>
+    <person>
+        <birthday>1999-02-21</birthday>
+        <city>some city</city>
+        <firstName>Riccardo</firstName>
+        <lastName>Ravagnan</lastName>
+        <postalCode>1234</postalCode>
+        <street>some street</street>
+    </person>
+    <person>
+        <birthday>2000-08-17</birthday>
+        <city>some Napul</city>
+        <firstName>Edoardo</firstName>
+        <lastName>Meleta</lastName>
+        <postalCode>666</postalCode>
+        <street>some weed</street>
+    </person>
+</persons>
