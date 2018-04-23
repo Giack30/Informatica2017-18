@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Scheda n°07 16/04 Ravagnan</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<form>
+			<script language="javascript" src="script2.js"></script>
+		<div>esercizio di laboratorio</div>
+		<p> 
+			<label>Cognome e nome</label> <br> 
+			<input id="nomeCognome" name="nome" placeholder="inserire cognome e nome" size="40" maxlength="50" onchange="rightNamSur()"> 
+		</p> 
+		
+		<p>
+			<label> sesso :</label>
+			       Male <input id="maschio" type="radio" name="sesso" value="M"/>
+				   Female <input id="femmina" type="radio" name="sesso" value="F"/>
+		</p>
+		
+		<p>
+			<label> Università frequentata : </label>
+			<select id="università">
+				<option>Università degli studi di Padova</option>
+				<option>Università degli studi di Udine</option>
+				<option>Università "C'à Foscari" Venezia</option>
+				<option>Università IUAV di Venezia</option>
+				<option>Università degli studi di Verona</option>
+			</select>
+		</p>
+		
+		<p>
+			<label> Codice CAP : </label>
+			<input id="CAP" name="cap" placeholder="xxxxx" size="40" maxlength="5"  onchange="rightCap()"> 
+		</p>
+		
+		<p>
+			<label> professione : </label>
+			<br />
+			<input id="studente" type="checkbox" name="studente" value="studente"> studente
+			<br /> 
+			<input id="lavoratore" type="checkbox" name="lavoratore" value="lavoratore"> lavoratore 
+			
+		</p>
+		
+		<p>
+			<label> Descrizione del lavoro svolto :</label>
+			<input id="descrizione" type="text"  size="40" maxlength="80">
+			
+		</p>
+		
+		<p>
+			<input  type="button" value="submitt" onClick="checkCorrect()">
+			<input  type="reset" value="reset" >
+		</p>
+		</form>
+	</body>
+</html>

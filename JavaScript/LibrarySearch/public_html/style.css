@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2-apr-2018, 17.59.32
+    Author     : giacomo.ravagnan
+*/
+
+#sx {float:left;width: 30%}
+#dx {float: right;width: 69%}
+#center{float: right; width: 10%}
+
+#forgotP {float: right;width: 70%}
+#signIn {float: right; width: 31%}
+
+#inp{float: right; width: 70%}
+#spunta{float: right; width: 30%}
+
+#search{float: right;width: 15%}
+#buttonSearch{float: right;width: 5%}
+
+#rectangle{ 
+    width:100%;
+    margin-top: -20px;
+    height: 40%;
+    background-color: #1C39BB ; 
+    border-radius:10px;
+}
+
+#rectangle2{
+    width:100%;
+    margin-top: -20px;
+    height: 40%;
+    background-color: #1C39BB ; 
+    border-radius:10px;
+}
+
+#firstBlock{
+  float:left;
+  width: 10%;
+}
+#secondBlock{
+  float: right;
+  width: 10%;  
+}
+#thirdBlock{
+    
+}
+#fourthBlock{
+    
+}
+#newsBlock{
+    margin-top: -30px;
+    background-color: white;
+  min-width:   260px;
+  min-height:  200px;
+  max-width:  100px;
+  max-height: 100%;
+  border: 1px;
+}
+
+#title{
+    color: red;
+    font-size: 24px;
+}
+
